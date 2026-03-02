@@ -1,28 +1,18 @@
 {
-  "name": "prediction-market-arbitrage-bot",
-  "version": "1.0.0",
-  "description": "Educational arbitrage bot for Polymarket and Kalshi using pmxt.dev",
-  "main": "src/index.js",
+  "name": "arb-bot-300",
+  "version": "4.2.0",
   "type": "module",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "node --watch src/index.js",
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+    "build": "npm run setup && vite build",
+    "dev": "vite",
+    "setup": "npm install vite @vitejs/plugin-react"
   },
-  "keywords": [
-    "arbitrage",
-    "polymarket",
-    "kalshi",
-    "trading",
-    "bot"
-  ],
-  "author": "",
-  "license": "MIT",
   "dependencies": {
-    "dotenv": "^16.0.0",
-    "pmxtjs": "^0.4.4"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "jest": "^30.2.0"
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.8"
   }
 }
